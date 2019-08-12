@@ -1,0 +1,17 @@
+{
+  "name": "script",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^8.3.0",
+    "typescript": "3.5.2"
+  },
+  "scripts": {
+    "start": "ts-node src/script.ts",
+    "seed": "ts-node prisma/seed.ts",
+    "postinstall": "prisma2 generate"
+  },
+  "dependencies": {
+    "@types/uuid": "^3.4.5",
+    "uuid": "^3.3.2"
+  }
+}
